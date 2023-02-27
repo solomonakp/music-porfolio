@@ -1,0 +1,186 @@
+/* defaults */
+
+body,
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@font-face {
+  font-family: 'music';
+  src: url('./assets/fonts/music.eot');
+  src: url('./assets/fonts/music.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/music.woff2') format('woff2'),
+    url('./assets/fonts/music.woff') format('woff'),
+    url('./assets/fonts/music.ttf') format('truetype'),
+    url('./assets/fonts/music.svg#font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: 'music';
+    src: url('./assets/fonts/music.svg#music') format('svg');
+  }
+}
+
+[data-icons8]:before {
+  content: attr(data-icons8);
+}
+
+.icons8-music:before,
+.icons8-spotify:before,
+.icons8-youtube:before,
+.icons8-facebook:before,
+.icons8-twitter-circled:before,
+.icons8-instagram:before,
+.icons8,
+[data-icons8]:before {
+  display: inline-block;
+  font-family: 'music';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.icons8-music:before {
+  content: '\f100';
+}
+.icons8-spotify:before {
+  content: '\f101';
+}
+.icons8-youtube:before {
+  content: '\f102';
+}
+.icons8-facebook:before {
+  content: '\f103';
+}
+.icons8-twitter-circled:before {
+  content: '\f106';
+}
+.icons8-instagram:before {
+  content: '\f107';
+}
+
+.section {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.heading {
+  font-weight: bold;
+}
+/* default end */
+
+/* Navbar styles */
+
+nav .collapse.navbar-collapse {
+  flex-grow: unset;
+}
+
+nav .navbar-nav .nav-link {
+  color: #fff;
+}
+
+/* carousel section styles */
+
+.contact-info {
+  top: 200px;
+  left: 3%;
+}
+
+.contact-info .contact-title {
+  font-weight: 300;
+}
+
+.contact-info .icon-list {
+  list-style-type: none;
+  margin-bottom: 24px;
+}
+
+.contact-info li:not(:first-of-type) {
+  margin-left: 10px;
+}
+
+.contact-info .icon-link {
+  color: #fff;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.contact-info .icon-link:focus,
+.contact-info .icon-link:hover {
+  opacity: 0.5;
+}
+
+.contact-info .icon-link:active {
+  opacity: 0.7;
+}
+
+.contact-info .icon-link i {
+  font-size: 26px;
+}
+
+.carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Video section styles */
+
+.video-section iframe {
+  width: 100%;
+  height: 500px;
+}
+
+.video-section .carousel-control-next,
+.video-section .carousel-control-prev {
+  background-color: grey;
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  top: 50%;
+}
+
+.video-section .carousel-control-next {
+  transform: translate(-50%, -50%);
+}
+
+.video-section .carousel-control-prev {
+  transform: translate(50%, -50%);
+}
+
+.video-section .carousel-indicators {
+  bottom: -52px;
+}
+
+.video-section .carousel-indicators button {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.video-section .video-link {
+  color: inherit;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.video-section .video-link:focus,
+.video-section .video-link:hover {
+  opacity: 0.5;
+}
+
+/* Contact section styles */
+
+/* About section */
+
+/* Music section */
